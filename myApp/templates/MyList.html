@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My List</title>
+</head>
+<body>
+
+<ol>
+	
+	{% for x in MyList%}
+	<a href = "{% url 'MyDetail' MyModel_id=x.id %}"><li>{{x.title}}</li>
+	{%endfor%}
+
+</ol>
+
+</body>
+</html>

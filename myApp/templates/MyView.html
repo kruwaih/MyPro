@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My View</title>
+</head>
+<body>
+<h1>This Is My View</h1>
+<h2>{{title}}</h2>
+<h3>{{user}} is logged in</h3>
+
+	{% for x in my_object %}
+		{{x.title}}<br>
+		{{x.contant}}<br>
+		{{x.update}}<br>
+		{{x.pk}}<br>
+	{%endfor%}
+
+
+</body>
+</html>
